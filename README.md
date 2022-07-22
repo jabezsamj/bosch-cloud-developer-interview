@@ -17,7 +17,7 @@ Provisioning a device (Onboarding IoT devices into a fleet) is a major task in g
 
 There are two stages : 
 
-Stage 1 (Production unit) : When the complete fleet of devices are produced at the production unit. We have control over the device, to save any secret information from the device, which we can save it in our Database and use it for verifying when the devices gets onboarded from the customer premise at a later stage.
+Stage 1 (Production unit) : When the complete fleet of devices are produced at the production unit. We can save device related information, which we can save it in our Database and use it for verifying when the devices gets onboarded from the customer premise at a later stage.
 
 
 Stage 2 (Customer premise) : 
@@ -28,7 +28,7 @@ When the individual devices are taken to the customer premise and they connect t
 
 
 
-Task :  
+**Task** :  
 
 Create a REST-api endpoint which can receive device related information
 
@@ -37,4 +37,8 @@ Create a API-gateway with a WAF infront of it. Create a POST request method in t
 
 The payload is Serial-number of the produced device.
 The production unit will call this api for every device that is produced in the unit, to save device related information for future verification.
-![image](https://user-images.githubusercontent.com/13918912/180370619-2797f162-a265-4c4e-b1be-986ce6f6c938.png)
+
+
+**Architecture**
+
+![image](https://github.com/jabezsamj/bosch-cloud-developer-interview/blob/main/interview_task.png)
